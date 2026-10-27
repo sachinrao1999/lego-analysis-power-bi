@@ -1,0 +1,49 @@
+// Measures from the report, grouped by their home table.
+
+// Home table: Measure's table
+Total sets =
+DISTINCTCOUNT(lego_sets[set_id])
+
+// Home table: Measure's table
+Total groups =
+DISTINCTCOUNT(lego_sets[themeGroup])
+
+// Home table: Measure's table
+Avg.price =
+AVERAGE(lego_sets[Price])
+
+// Home table: Measure's table
+Avg.Pieces =
+AVERAGE(lego_sets[pieces])
+
+// Home table: Measure's table
+Avg.Age =
+AVERAGE(lego_sets[age])
+
+// Home table: Measure's table
+Selected Set =
+SELECTEDVALUE(lego_sets[name],"Select a Set")
+
+// Home table: Measure's table
+Selected Price =
+SELECTEDVALUE(lego_sets[Price],"-")
+
+// Home table: Measure's table
+Selected year =
+SELECTEDVALUE(lego_sets[year]," - ")
+
+// Home table: Measure's table
+Selected pieces =
+SELECTEDVALUE(lego_sets[pieces],"-")
+
+// Home table: Measure's table
+Selected Age =
+SELECTEDVALUE(lego_sets[age],"-")
+
+// Home table: Max price
+Max price Value =
+SELECTEDVALUE('Max price'[Max price], 850)
+
+// Home table: Measure's table
+Max price filter =
+IF([Avg.price] <= 'Max price'[Max price Value],1,0)

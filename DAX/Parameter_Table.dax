@@ -1,0 +1,2 @@
+// Maximum-price parameter: 0 to 850 in increments of 5.
+'Max price' = GENERATESERIES(0, 850, 5)
