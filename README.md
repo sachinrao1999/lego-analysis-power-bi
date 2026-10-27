@@ -71,7 +71,6 @@ The report cards round average pieces to **411** and average price to **$45**. P
 
 ## What I found
 
-- **City has the most sets in the cleaned dataset**, with 445, followed by Star Wars with 388 and Duplo with 313.
 - **Licensed is the largest theme group**, with 1,288 sets, or about 29.4% of the collection.
 - **The 5 to 9 age group contains 3,338 sets**, roughly 76.1% of the dataset. This grouping uses each set's minimum recommended age.
 - **2,248 sets are priced below $25**, just over half of all sets. There are only nine sets in the $500-and-above price band.
@@ -122,21 +121,3 @@ The complete set of measures is in [DAX/Measures.dax](DAX/Measures.dax).
 
 ## Open the report
 
-Download [LEGO_Set_Explorer.pbix](Report/LEGO_Set_Explorer.pbix) and open it in Power BI Desktop. The file includes the imported data, so the saved report can be explored without refreshing the CSV first.
-
-The original CSV is not included in this repository. Refreshing the data requires `lego_sets.csv` and an updated source path in Power Query. The set images use external URLs and need an internet connection.
-
-## Files in this repository
-
-| Folder or file | Contents |
-|---|---|
-| `Report/` | Power BI report |
-| `Screenshots/` | Main page and Set Explorer screenshots |
-| `DAX/` | Measures and parameter-table expression |
-| `Power_Query/` | Data preparation query |
-| `Data/README.md` | Source-file and refresh details |
-| `docs/` | Data dictionary, preparation steps and report notes |
-
-## What I would improve next
-
-I would make the currency formatting consistent across the cards and table, add a price-per-piece comparison, and include a release-year filter. I would also make the budget selection apply consistently to the summary cards so that the displayed totals match the shortlisted sets.
